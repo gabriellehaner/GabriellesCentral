@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_navegacao"
+    app:startDestination="@id/primeirofragmento">
+
+    <fragment
+        android:id="@+id/primeirofragmento"
+        android:name="com.example.projdenavegacao.primeirofragmento"
+        android:label="primeirofragmento"
+        tools:layout="@layout/primeirofragmento">
+        <action
+            android:id="@+id/primeirofragmentoparasegundofragmento"
+            app:destination="@id/segundofragmento" />
+        <action
+            android:id="@+id/action_primeirofragmento_to_terceirofragmento2"
+            app:destination="@id/terceirofragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundofragmento"
+        android:name="com.example.projdenavegacao.segundofragmento"
+        android:label="fragment_segundofragmento"
+        tools:layout="@layout/segundofragmento" >
+        <action
+            android:id="@+id/segundofragmentoparaprimeirofragmento"
+            app:destination="@id/primeirofragmento" />
+        <action
+            android:id="@+id/segundofragmentoparaquartofragmento"
+            app:destination="@id/quartofragmento" />
+        <action
+            android:id="@+id/segundofragmentoparaquintofragmento"
+            app:destination="@id/quintofragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/terceirofragmento"
+        android:name="com.example.projdenavegacao.terceirofragmento"
+        android:label="terceirofragmento"
+        tools:layout="@layout/terceirofragmento" >
+        <action
+            android:id="@+id/terceirofragmentoparasegundofragmento"
+            app:destination="@id/segundofragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/quartofragmento"
+        android:name="com.example.projdenavegacao.quartofragmento"
+        android:label="quartofragmento"
+        tools:layout="@layout/quartofragmento" >
+        <action
+            android:id="@+id/quartofragmentoparasegundofragmento"
+            app:destination="@id/segundofragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/quintofragmento"
+        android:name="com.example.projdenavegacao.quintofragmento"
+        android:label="quintofragmento"
+        tools:layout="@layout/quintofragmento" >
+        <action
+            android:id="@+id/quintofragmentoparasegundofragmento"
+            app:destination="@id/segundofragmento" />
+    </fragment>
+</navigation>
