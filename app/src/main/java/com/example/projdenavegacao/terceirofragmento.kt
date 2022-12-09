@@ -15,5 +15,6 @@ class terceirofragmento: Fragment (R.layout.terceirofragmento){
 
             findNavController().navigate(R.id.terceirofragmentoparasegundofragmento)
         }
+
     }
 }

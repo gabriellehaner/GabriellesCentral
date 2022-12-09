@@ -24,4 +24,148 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963" />
+
+    <TextView
+        android:id="@+id/converterde"
+        android:layout_width="241dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="112dp"
+        android:text="Converter de:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="285dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/botaocelsius1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Celsius"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fahrenheitbotao1"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Fahrenheit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/kelvinbotao1"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Kelvin"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="Converter para:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/resultado"
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/arredondar"
+        android:ems="10"
+        android:hint="Resultado"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="306dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="288dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/botaocelsius2"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Celsius"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fahrenheitbotao2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Fahrenheit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/kelvinbotao2"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Kelvin"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculartemp"
+        style="@style/botaoredondo"
+        android:layout_width="196dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/arredondar"
+        android:text="Calcular"
+        android:textColor="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inserirtemperatura"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="404dp"
+        android:background="@drawable/arredondar"
+        android:ems="10"
+        android:hint="Inserir Temperatura"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
